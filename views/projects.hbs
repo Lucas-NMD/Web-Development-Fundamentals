@@ -1,0 +1,28 @@
+{{> layout pageTitle="Lucas Rodriguez Barozzi - Projects"}}
+
+<main class="projects bg-dark">
+  <h1>Projects</h1>
+  <p>Check out some of my projects here:</p>
+  <section class="content d-flex">
+    <div class="docs-demo columns">
+      <div class="column col-6">
+        <div class="card bg-primary">
+          <div class="card-image">
+            <img class="img-responsive" src="{{ project1.imageUrl }}" alt="My Layout" />
+          </div>
+          <div class="card-header">
+            <div class="card-title h5">{{ project1.title }}</div>
+            <div class="card-subtitle text-gray">{{ project1.subtitle }}</div>
+          </div>
+          <div class="card-body">
+            {{ project1.description }}
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-primary" href="{{ project1.link }}">Open</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar content for other projects -->
+    </div>
+  </section>
+</main>
